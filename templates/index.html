@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Malicious QR Checker</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <script defer src="{{ url_for('static', filename='script.js') }}"></script>
+</head>
+
+<body>
+    <header>
+        <h1>Malicious QR Checker</h1>
+    </header>
+
+    <main>
+        <div class="center-wrapper">
+            <div class="title" id="fixedTitle">
+                <h2 id="mainTitle">Upload QR to Analyse</h2>
+                <h4 id="subTitle"></h4>
+            </div>
+            <div class="container">
+                <div id="imageContainer">
+                    <div id="imageLoadingOverlay"></div> 
+                    <img id="uploadedImage" src="">
+                </div>
+                <div id="formContainer">
+                    <form action="/analyse_image" method="post" enctype="multipart/form-data" id="uploadForm">
+                        <label for="file">Choose QR</label>
+                        <input type="file" name="file" id="file" accept="image/*" required>
+                        <br><br>
+
+                        <div id="buttonContainer">
+                            <button type="submit" id="analyseButton" disabled>Analyse QR</button>
+                        </div>
+                    </form>
+                </div>
+                <div id="statusContainer">
+                    <div id="statusMessage"></div>
+                    <button id="resubmitButton" style="display: none">Resubmit</button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        &copy; 2023 Intro To Machine Learning Project
+    </footer>
+</body>
+
+</html>
