@@ -1,6 +1,6 @@
 # ScanSentinel
 
-ScanSentinel is an application for [brief description of the app].
+ScanSentinel is an application to detection if the QR code is safe or malicious without accessing the actual resource it is point to.
 
 ## Getting Started
 
@@ -62,15 +62,11 @@ If you'd like to contribute to ScanSentinel, please follow these steps:
 5. Push to the branch (`git push origin feature`)
 6. Create a new Pull Request
 
-### License
 
-[Include the license information here]
 
 ### Support
 
 For support, please open an issue on the [issue tracker](https://github.com/sachinlodhi/ScanSentinel/issues).
 
-### Acknowledgements
 
-[Optional: Acknowledge any contributions, libraries, or resources used in the project]
 
