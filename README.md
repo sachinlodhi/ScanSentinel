@@ -1,6 +1,6 @@
 # ScanSentinel
 
-ScanSentinel is an application to detection if the QR code is safe or malicious without accessing the actual resource it is point to.
+ScanSentinel is an application that detects if the QR code is safe or malicious without accessing the resource it is pointing to.
 
 ## Getting Started
 
